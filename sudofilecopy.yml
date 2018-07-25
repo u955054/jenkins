@@ -1,0 +1,11 @@
+# name: example copying file with owner and permissions
+- hosts: all_cname
+  tasks:
+  - name: Copy ssh keys to remote server for ansadmin
+    copy:
+     src: /etc/sudoers
+     dest: /etc/sudoers
+     owner: root
+     group: root
+     mode: 0644
+     validate: /usr/sbin/visudo -cf %s
