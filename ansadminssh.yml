@@ -1,0 +1,11 @@
+# name: example copying file with owner and permissions
+- hosts: all_cname
+  tasks:
+  - name: Copy ssh keys to remote server for ansadmin
+    copy:
+     src: /home/ansadmin/.ssh/
+     dest: /home/ansadmin/.ssh/
+     owner: ansadmin
+     group: ansadmin
+     mode: 0644
+     force: yes
