@@ -113,8 +113,6 @@ root	ALL=(ALL) 	ALL
 jake	ALL=(ALL) 	ALL
 ansadmin	ALL=(ALL) 	ALL
 jadmin	192.168.1.130=(ALL) 	ALL
-jenkins 192.168.1.130=(ALL) 	NOPASSWD: ALL
+jenkins 192.168.1.130=(root) 	NOPASSWD: /usr/bin/ansible-playbook
 jenkins 192.168.1.130=(ansadmin) 	NOPASSWD: ALL
-jenkins 192.168.1.130=(root) 	NOPASSWD: /etc/ansible/bin/ansible-playbook
 #
-# Just testing the first upload
