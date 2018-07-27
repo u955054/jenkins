@@ -117,3 +117,4 @@ jenkins 192.168.1.130=(ALL) 	NOPASSWD: ALL
 jenkins 192.168.1.130=(ansadmin) 	NOPASSWD: ALL
 jenkins 192.168.1.130=(root) 	NOPASSWD: /etc/ansible/bin/ansible-playbook
 #
+# Just testing the first upload
