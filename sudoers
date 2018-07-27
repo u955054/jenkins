@@ -114,5 +114,5 @@ jake	ALL=(ALL) 	ALL
 ansadmin	ALL=(ALL) 	ALL
 jadmin	192.168.1.130=(ALL) 	ALL
 jenkins 192.168.1.130=(root) 	NOPASSWD: /usr/bin/ansible-playbook
-jenkins 192.168.1.130=(ansadmin) 	NOPASSWD: ALL
+#jenkins 192.168.1.130=(ansadmin) 	NOPASSWD: ALL
 #
